@@ -1,6 +1,14 @@
 """
 Tests for refactored calculator module.
-These tests verify that the refactored code maintains the same behavior.
+
+This test suite verifies that the refactored code maintains the same behavior
+as the original implementation. It provides comprehensive coverage for:
+- Calculator class: arithmetic operations with validation
+- DataProcessor class: formatting operations for different person types
+- FileHandler class: file reading with error handling
+
+The test structure mirrors test_calculator.py to ensure behavior equivalence
+between the original and refactored implementations.
 """
 import pytest
 from calculator_refactored import Calculator, DataProcessor, FileHandler

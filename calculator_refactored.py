@@ -15,12 +15,13 @@ class Calculator:
         Validate a single numeric input.
         
         Args:
-            value: The value to validate
-            param_name: Name of the parameter for error messages
+            value (int | float): The numeric value to validate. Must be within
+                the range [-1e308, 1e308].
+            param_name (str): Name of the parameter for error messages.
             
         Raises:
-            TypeError: If value is not int or float
-            ValueError: If value is out of range
+            TypeError: If value is not int or float.
+            ValueError: If value is out of the allowed range [-1e308, 1e308].
         """
         if not isinstance(value, (int, float)):
             raise TypeError(
